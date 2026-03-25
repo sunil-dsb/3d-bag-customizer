@@ -1,5 +1,5 @@
 import type {Metadata} from 'next';
-import './globals.css'; // Global styles
+import './globals.css';
 import { Inter, Playfair_Display } from 'next/font/google';
 
 const inter = Inter({
@@ -13,8 +13,11 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'BLK Customizer',
-  description: 'Custom luxury bags',
+  title: 'Atelier Bag Customizer',
+  description: 'Design and customize luxury bags in real-time 3D',
+  icons: {
+    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>",
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
